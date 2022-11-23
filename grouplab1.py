@@ -30,7 +30,6 @@ scissors = '''
 
 game_images = [rock, paper, scissors]
 
-user_choice = True
 
 while True:
     user_choice = int(
@@ -61,13 +60,14 @@ while True:
         print("It's a draw!")
 
 
+
     y = True
     n = False
 
-    replay = input("Up for another round? (y/n) ")
-    if replay == 'y':
+    replay = input ("Up for another round? (y/n) ")
+    if replay == y:
         user_choice == True
     
     else:
-        print('Thanks for playing! We hope you play again soon!')
-        exit()
+        print('Thanks for playing!')
+        break
